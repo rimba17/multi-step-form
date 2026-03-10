@@ -27,7 +27,7 @@ export const validationSchema = Yup.object({
 
 export default function Home() {
   const initialValues = {
-    current_step: 2,
+    current_step: 1,
     stepNumber: [1, 2, 3, 4],
     is_completed_step: false,
     name: "",
