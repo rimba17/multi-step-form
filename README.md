@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Multi Step Form — Next.js Project
 
-## Getting Started
+This project is a Multi Step Form built with Next.js, Tailwind CSS, Formik, and Yup.
+The goal of this project is to provide a clean, reusable, and scalable form wizard with validation and state management using Formik.
 
-First, run the development server:
+🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Next.js – App Router architecture
+- Tailwind CSS – Utility-first styling
+- Formik – Form state management
+- Yup – Schema-based form validation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📌 Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Multi-step form
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Step-by-step validation using Yup
 
-## Learn More
+- Centralized form state using Formik
 
-To learn more about Next.js, take a look at the following resources:
+- Responsive UI using Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Clean and modular folder structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Client-side validation with real-time error messages
 
-## Deploy on Vercel
+📥 Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository:
+   git clone https://github.com/rimba17/multi-step-form.git
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Navigate to the project directory:
+   cd multi-step-form
+
+3. Install dependencies:
+   npm install
+
+4. Run the development server:
+   npm run dev
+
+Then open:
+http://localhost:3000
+
+📘 How It Works
+
+1. Formik Manages All Steps
+
+All steps share the same Formik instance, so values persist when navigating between steps.
+
+2. Yup Validation Per Step
+
+Each step has its own validation schema, keeping validation clean and predictable.
+
+3. State-Driven Navigation
+
+Next/Previous buttons update the current step index.
