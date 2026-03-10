@@ -8,7 +8,7 @@ const Step3 = () => {
         Pick add-ons
       </h1>
       <p className="text-base text-neutral-grey500">
-        Add-ons help enchance your gaming experience.
+        Add-ons help enhance your gaming experience.
       </p>
       {addOns.map((item) => {
         const price = item.price[values.billing];

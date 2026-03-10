@@ -6,9 +6,8 @@ const Step4 = () => {
   const { price } = plans.find((item) => item.id === Number(values.planId));
 
   // destruct name and save to variable planName and fallback = {}
-  const { name: planName } = plans.find(
-    (plan) => plan.id === Number(values.planId) || {},
-  );
+  const { name: planName } =
+    plans.find((plan) => plan.id === Number(values.planId)) || {};
   const billing = values.billing;
   const billingType = billing === "monthly" ? "mo" : "yr";
 
