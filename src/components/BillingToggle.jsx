@@ -10,7 +10,7 @@ const BillingToggle = () => {
 
       <button
         type="button"
-        className="w-12 h-6 bg-primary-blue950 rounded-full relative"
+        className="w-12 h-6 bg-primary-blue950 rounded-full relative cursor-pointer"
         onClick={() =>
           setFieldValue("billing", isYearly ? "monthly" : "yearly")
         }
